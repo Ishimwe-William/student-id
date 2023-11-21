@@ -41,7 +41,7 @@ public class Main {
         printStudents();
 
         //delete student
-        result=studentService.deleteStudent("24722");
+        result= studentService.deleteStudent("24722");
         System.out.println(result);
         printStudents();
 
@@ -64,7 +64,7 @@ public class Main {
         }
     }
     public static void printStudents(){
-        StudentService studentService=new StudentService();
+        StudentService studentService =new StudentService();
         List<Student> students = studentService.getAllStudents();
         if (!students.isEmpty()) {
             System.out.println("Student List\n" +
